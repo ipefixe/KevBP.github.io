@@ -8,12 +8,11 @@ body{
   max-width: 800px;
 }
 
-
 a {
   color: #08d0aa;
 }
 
-h1, h2, h3 {
+h1, h2, h3, footer {
   text-align: center;
 }
 
@@ -59,3 +58,19 @@ code {
   letter-spacing: 2px;
 }
 
+nav ul li {
+  display: inline;
+  list-style-type: none;
+  padding-right: 20px;
+}
+
+nav ul {
+  text-align: center;
+}
+
+header, article, footer {
+  background-color: #232323;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+}
