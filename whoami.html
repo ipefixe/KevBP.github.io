@@ -5,10 +5,10 @@ layout: default
 <h2>WHOAMI</h2>
 
 <ul>
-{% for whoami_posts in site.categories.whoami %}
+{% for posts in site.categories.whoami %}
   <li>
-    <a href=""></a>
-    <p></p>
+    <a href="">{{ posts.title }}</a>
+    <p>{{ posts.content }}</p>
   </li>
 {% endfor %}
 </ul>

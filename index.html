@@ -5,10 +5,10 @@ layout: default
 <h2>INDEX</h2>
 
 <ul>
-{% for index_posts in site.categories.example %}
+{% for posts in site.categories.index %}
   <li>
-    <a href="">{{ index_posts.title }}</a>
-    <p>{{ index_posts.content }}</p>
+    <a href="">{{ posts.title }}</a>
+    <p>{{ posts.content }}</p>
   </li>
 {% endfor %}
 </ul>
