@@ -4,11 +4,8 @@ layout: default
 
 <h2>INDEX</h2>
 
-<ul>
-{% for posts in site.categories.index %}
-  <li>
-    <a href="">{{ posts.title }}</a>
-    <p>{{ posts.content }}</p>
-  </li>
+{% for posts in site.categories.example %}
+<article>
+  {% include article.html %}
+</article>
 {% endfor %}
-</ul>

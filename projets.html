@@ -6,9 +6,8 @@ layout: default
 
 <ul>
 {% for posts in site.categories.blog %}
-  <li>
-    <a href="">{{ posts.title }}</a>
-    <p>{{ posts.content }}</p>
-  </li>
+<article>
+  {% include article.html %}
+</article>
 {% endfor %}
 </ul>
