@@ -4,7 +4,21 @@ layout: default
 
 <h2>INDEX</h2>
 
-{% for posts in site.categories.example %}
+{% for posts in site.categories.index %}
+<article>
+  {% include article.html %}
+</article>
+{% endfor %}
+
+<h3>Dernière entrée du blog</h3>
+{% for posts in site.categories.blog limit:1 %}
+<article>
+  {% include article.html %}
+</article>
+{% endfor %}
+
+<h3>Dernière entrée des projets</h3>
+{% for posts in site.categories.projets limit:1 %}
 <article>
   {% include article.html %}
 </article>
