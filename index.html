@@ -3,3 +3,12 @@ layout: default
 ---
 
 <h2>INDEX</h2>
+
+<ul>
+{% for index_posts in site.categories.example %}
+  <li>
+    <a href="">{{ index_posts.title }}</a>
+    <p>{{ index_posts.content }}</p>
+  </li>
+{% endfor %}
+</ul>
