@@ -1,6 +1,6 @@
 ---
 title: Vache montbéliarde en 3D
-category: blog
+category: projets
 ---
 
 Je vous propose ici une vidéo d'une vache de race Montbéliarde en 3D modélisée avec Blender 2.73. 
