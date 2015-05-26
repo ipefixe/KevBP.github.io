@@ -1,15 +1,11 @@
 body{
   background: #3f3f3f;
   font-family: sans-serif;
-  color: #0892d0;
+  color: #7CC7E9;
   line-height: 1.4;
   padding: 10px;
   margin: auto;
   max-width: 800px;
-}
-
-a {
-  color: #08d0aa;
 }
 
 h1, h2, h3, footer {
@@ -19,7 +15,7 @@ h1, h2, h3, footer {
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
   letter-spacing: 2px;
-  color: #d04608;
+  color: #FF4949;
 }
 
 h1 {
@@ -28,15 +24,11 @@ h1 {
 }
 
 h3 {
-  color: #260375;
+  color: #8F5EFF;
 }
 
-em {
-  color: #d0aa08;
-}
-
-strong {
-  color: #d0082d;
+em, strong, a {
+  color: #fff;
 }
 
 blockquote {
