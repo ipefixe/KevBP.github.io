@@ -67,10 +67,16 @@ header, article, footer {
   border-radius: 5px;
 }
 
-header img {
+header img, article img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+article img {
+  border-radius: 2px;
+  border-color: #fff;
+  border-style: groove;
 }
 
 #index {
