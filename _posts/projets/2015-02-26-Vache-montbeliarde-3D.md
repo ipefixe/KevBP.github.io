@@ -23,7 +23,7 @@ Et depuis je n'ai jamais repris le temps de le faire sur mon PC fixe.
 Pourquoi une Montbéliarde ? Aucune idée... Je cherchais un modèle pas trop complexe, mais pas non plus trop carré à l'image de nos villes.
 C'est cette espèce bovine qui m'est arrivé en tête, comme c'est une belle bête je l'ai gardé.
 
-[![Vidéo de ma vache en 3D fait avec Blender](http://img.youtube.com/vi/JHYLSh-9dgw/0.jpg)](http://www.youtube.com/watch?v=JHYLSh-9dgw)  
-Il faut cliquer sur l'image pour voir l'animation.
+<iframe width="500" height="300" src="https://www.youtube.com/embed/JHYLSh-9dgw" frameborder="0" allowfullscreen></iframe>
+[Accéder à la vidéo](http://www.youtube.com/watch?v=JHYLSh-9dgw)  
 
 P.S. : N'étant pas de ce domaine, et pratiquant en tant qu'amateur et seulement occasionnellement, je connais très mal le vocabulaire lié à la modélisation 3D.

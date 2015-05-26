@@ -67,7 +67,7 @@ header, article, footer {
   border-radius: 5px;
 }
 
-header img, article img {
+header img, article img, iframe {
   display: block;
   margin-left: auto;
   margin-right: auto;
