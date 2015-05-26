@@ -4,22 +4,15 @@ layout: default
 
 <h2>INDEX</h2>
 
-{% for posts in site.categories.index %}
-<article>
-  {% include article.html %}
-</article>
+<h3>Dernières entrées</h3>
+<ul id="index">
+{% for post in site.posts %}
+<li>
+  {% if post.category == "blog" %}
+    <a href="{{ post.url }}" class="blog">{{ post.title }}</a> <span class="right">{{ post.date | date_to_string }}</span>
+  {% else %}
+    <a href="{{ post.url }}" class="projet">{{ post.title }}</a> <span class="right">{{ post.date | date_to_string }}</span>
+  {% endif %}
+</li>
 {% endfor %}
-
-<h3>Dernière entrée du blog</h3>
-{% for posts in site.categories.blog limit:1 %}
-<article>
-  {% include article.html %}
-</article>
-{% endfor %}
-
-<h3>Dernière entrée des projets</h3>
-{% for posts in site.categories.projets limit:1 %}
-<article>
-  {% include article.html %}
-</article>
-{% endfor %}
+</ul>

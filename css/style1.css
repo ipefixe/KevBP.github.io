@@ -74,3 +74,21 @@ header, article, footer {
   margin: 5px;
   border-radius: 5px;
 }
+
+#index {
+  list-style: none;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#index .right {
+  float: right;
+}
+
+#index .blog {
+  color: #ed6394;
+}
+
+#index .projet {
+  color: #6495ed;
+}
