@@ -1,5 +1,5 @@
 ---
-title: Première mise à jour du site
+title: Site web KevBP, première mise à jour
 category: projets
 layout: post
 ---

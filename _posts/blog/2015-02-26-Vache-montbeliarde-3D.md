@@ -1,6 +1,6 @@
 ---
 title: Vache montbéliarde en 3D
-category: projets
+category: blog
 layout: post
 ---
 
