@@ -11,25 +11,25 @@
     </div>
     <div id="navbar" class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
-        {% if page.url == "/" %}
+        {% if page.url contains "/" %}
         <li class="active"><a href="{{ site.baseurl }}/">Home</a></li>
         <li><a href="{{ site.baseurl }}/whoami/">Whoami</a></li>
         <li><a href="{{ site.baseurl }}/blog/">Blog</a></li>
         <li><a href="{{ site.baseurl }}/projets/">Projets</a></li>
         {% endif %}
-        {% if page.url == "/whoami/" %}
+        {% if page.url contains "/whoami/" %}
         <li><a href="{{ site.baseurl }}/">Home</a></li>
         <li class="active"><a href="{{ site.baseurl }}/whoami/">Whoami</a></li>
         <li><a href="{{ site.baseurl }}/blog/">Blog</a></li>
         <li><a href="{{ site.baseurl }}/projets/">Projets</a></li>
         {% endif %}
-        {% if page.url == "/blog/" %}
+        {% if page.url contains "/blog/" %}
         <li><a href="{{ site.baseurl }}/">Home</a></li>
         <li><a href="{{ site.baseurl }}/whoami/">Whoami</a></li>
         <li class="active"><a href="{{ site.baseurl }}/blog/">Blog</a></li>
         <li><a href="{{ site.baseurl }}/projets/">Projets</a></li>
         {% endif %}
-        {% if page.url == "/projets/" %}
+        {% if page.url contains "/projets/" %}
         <li><a href="{{ site.baseurl }}/">Home</a></li>
         <li><a href="{{ site.baseurl }}/whoami/">Whoami</a></li>
         <li><a href="{{ site.baseurl }}/blog/">Blog</a></li>
