@@ -7,26 +7,29 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Project name</a>
+      <a class="navbar-brand" href="{{ site.baseurl }}/">Kevin B. P.</a>
     </div>
     <div id="navbar" class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
-        {% if page.id == "/" %}
+        {% if page.id == "/" or page.id == "" %}
         <li class="active"><a href="{{ site.baseurl }}/">Home</a></li>
         <li><a href="{{ site.baseurl }}/whoami.html">Whoami</a></li>
         <li><a href="{{ site.baseurl }}/blog.html">Blog</a></li>
         <li><a href="{{ site.baseurl }}/projets.html">Projets</a></li>
-        {% elsif page.id == "/whoami" %}
+        {% endif %}
+        {% if page.id == "/whoami" %}
         <li><a href="{{ site.baseurl }}/">Home</a></li>
         <li class="active"><a href="{{ site.baseurl }}/whoami.html">Whoami</a></li>
         <li><a href="{{ site.baseurl }}/blog.html">Blog</a></li>
         <li><a href="{{ site.baseurl }}/projets.html">Projets</a></li>
-        {% elsif page.id == "/blog" %}
+        {% endif %}
+        {% if page.id == "/blog" %}
         <li><a href="{{ site.baseurl }}/">Home</a></li>
         <li><a href="{{ site.baseurl }}/whoami.html">Whoami</a></li>
         <li class="active"><a href="{{ site.baseurl }}/blog.html">Blog</a></li>
         <li><a href="{{ site.baseurl }}/projets.html">Projets</a></li>
-        {% elsif page.id == "/projets" %}
+        {% endif %}
+        {% if page.id == "/projets" %}
         <li><a href="{{ site.baseurl }}/">Home</a></li>
         <li><a href="{{ site.baseurl }}/whoami.html">Whoami</a></li>
         <li><a href="{{ site.baseurl }}/blog.html">Blog</a></li>
