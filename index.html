@@ -8,9 +8,9 @@ layout: default
 {% for post in site.posts %}
   <table class="table table-condensed">
     {% if post.category == "blog" %}
-      <tr class="info"><td><a href="{{ post.url }}" class="blog">{{ post.title }}</a></td>{{ post.date | date_to_string }}<td></td></tr>
+      <tr class="info"><td><a href="{{ post.url }}">{{ post.title }}</a></td><td>{{ post.date | date_to_string }}</td></tr>
     {% else %}
-      <tr class="danger"><td><a href="{{ post.url }}" class="projet">{{ post.title }}</a></td><td>{{ post.date | date_to_string }}</td></tr>
+      <tr class="danger"><td><a href="{{ post.url }}">{{ post.title }}</a></td><td>{{ post.date | date_to_string }}</td></tr>
     {% endif %}
   </table>
 {% endfor %}
