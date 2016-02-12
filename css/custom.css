@@ -1,8 +1,29 @@
 body {
   padding-top: 50px;
+  background: #3f3f3f;
+  font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+  color: #7CC7E9;
 }
 
 .template {
   padding: 40px 15px;
   text-align: center;
+}
+
+#index {
+  list-style: none;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+#index .right {
+  float: right;
+}
+
+#index .blog {
+  color: #ed6394;
+}
+
+#index .projet {
+  color: #6495ed;
 }
