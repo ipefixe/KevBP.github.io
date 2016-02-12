@@ -7,7 +7,13 @@ body {
 
 .template {
   padding: 40px 15px;
-  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #FF4949;
+  test-align: center;
 }
 
 #index {
