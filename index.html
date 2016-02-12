@@ -2,17 +2,16 @@
 layout: default
 ---
 
-<h2>INDEX</h2>
-
-<h3>Dernières entrées</h3>
+<h1>Home</h1>
+<h2>Dernières entrées</h2>
 <ul id="index">
 {% for post in site.posts %}
-<li>
-  {% if post.category == "blog" %}
-    <a href="{{ post.url }}" class="blog">{{ post.title }}</a> <span class="right">{{ post.date | date_to_string }}</span>
-  {% else %}
-    <a href="{{ post.url }}" class="projet">{{ post.title }}</a> <span class="right">{{ post.date | date_to_string }}</span>
-  {% endif %}
-</li>
+  <table class="table table-condensed">
+    {% if post.category == "blog" %}
+      <tr class="info"><td><a href="{{ post.url }}" class="blog">{{ post.title }}</a></td>{{ post.date | date_to_string }}<td></td></tr>
+    {% else %}
+      <tr class="danger"><td><a href="{{ post.url }}" class="projet">{{ post.title }}</a></td><td>{{ post.date | date_to_string }}</td></tr>
+    {% endif %}
+  </table>
 {% endfor %}
 </ul>
