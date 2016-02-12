@@ -11,7 +11,8 @@
     </div>
     <div id="navbar" class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
-        {{ page.id }}
+        page {{ page.url }}
+        site {{ site.url }}
         {% if page.id == "/" or page.id == "" %}
         <li class="active"><a href="{{ site.baseurl }}/">Home</a></li>
         <li><a href="{{ site.baseurl }}/whoami.html">Whoami</a></li>
