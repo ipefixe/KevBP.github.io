@@ -1,8 +1,38 @@
-<nav>
-  <ul>
-    <li><a href="{{ site.baseurl }}/" class="menu">INDEX</a></li>                          <!-- Hub-->
-    <li><a href="{{ site.baseurl }}/whoami.html" class="menu">WHOAMI</a></li>              <!-- Description + photo + CV -->
-    <li><a href="{{ site.baseurl }}/blog.html" class="menu">BLOG</a></li>                  <!-- Partage, decouverte, actualité -->
-    <li><a href="{{ site.baseurl }}/projets.html" class="menu">PROJETS</a></li>            <!-- Présentation de mes projets -->
-  </ul>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Project name</a>
+    </div>
+    <div id="navbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        {% if page.id == "/" %}
+        <li class="active"><a href="{{ site.baseurl }}/">Home</a></li>
+        <li><a href="{{ site.baseurl }}/whoami.html">Whoami</a></li>
+        <li><a href="{{ site.baseurl }}/blog.html">Blog</a></li>
+        <li><a href="{{ site.baseurl }}/projets.html">Projets</a></li>
+        {% elsif page.id == "/whoami" %}
+        <li><a href="{{ site.baseurl }}/">Home</a></li>
+        <li class="active"><a href="{{ site.baseurl }}/whoami.html">Whoami</a></li>
+        <li><a href="{{ site.baseurl }}/blog.html">Blog</a></li>
+        <li><a href="{{ site.baseurl }}/projets.html">Projets</a></li>
+        {% elsif page.id == "/blog" %}
+        <li><a href="{{ site.baseurl }}/">Home</a></li>
+        <li><a href="{{ site.baseurl }}/whoami.html">Whoami</a></li>
+        <li class="active"><a href="{{ site.baseurl }}/blog.html">Blog</a></li>
+        <li><a href="{{ site.baseurl }}/projets.html">Projets</a></li>
+        {% elsif page.id == "/projets" %}
+        <li><a href="{{ site.baseurl }}/">Home</a></li>
+        <li><a href="{{ site.baseurl }}/whoami.html">Whoami</a></li>
+        <li><a href="{{ site.baseurl }}/blog.html">Blog</a></li>
+        <li class="active"><a href="{{ site.baseurl }}/projets.html">Projets</a></li>
+        {% endif %}
+      </ul>
+    </div>
+  </div>
 </nav>
