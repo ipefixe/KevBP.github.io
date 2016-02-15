@@ -16,3 +16,7 @@ object, iframe {
     margin-right: auto;
     max-width: 100%;
 }
+
+.date_post {
+    text-align: right;
+}
